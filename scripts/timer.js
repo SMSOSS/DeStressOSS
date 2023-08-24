@@ -16,7 +16,7 @@ resetTimeout();
 
 document.addEventListener("click", resetTimeout); 
 
-function timer(userTime, userMode) {
+function sessionTimer(userTime, userMode) {
     const timeDigit = document.getElementById("time-digit");
 
     const duration = userTime * 60;
