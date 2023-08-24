@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <!-- Always inherit font and common styles-->
     <link rel="stylesheet" type="text/css" href="assets/styles/font.css">
@@ -7,16 +8,23 @@
     <!-- Inherit page-specific title-->
     <link rel="stylesheet" type="text/css" href="assets/styles/focus.css">
 
+    <!-- Inherit cookieMonster -->
+    <script src="scripts/cookieMonster.js"></script>
+
     <title>DeStress - Session Ended</title>
 </head>
 
 <body style="background: #F1F3F5">
     <h2 id="page-title">DeStress</h2>
     <div id="time-div">
+        <h3 id="time-digit" style="color: #1E1E1E">-1</h3>
         <h5 id="time-togo" style="color: #1E1E1E">minutes<br>completed</h5>
     </div>
 
     <a href="index.html">
         <button id="l1-button" style="position: absolute; left: 52.5%">DONE</button>
     </a>
+
+    <!-- Inherit page-specific js tool -->
+    <script src="scripts/postSessionTool.js"></script>
 </body>
