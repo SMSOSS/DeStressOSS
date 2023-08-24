@@ -48,3 +48,12 @@ if (userFocusTime == 0) {
         userRelaxBar.style.borderRadius = "1vh";
     }
 }
+
+if (userTotalTime == 0) {
+    console.log("hello is me");
+    userRelaxBar.style.display = "none";
+    userSleepBar.style.display = "none";
+    userFocusBar.style.borderRadius = "1vh";
+    userFocusBar.style.backgroundColor = "#999999";
+    userFocusBar.style.width = "100vh";
+}
