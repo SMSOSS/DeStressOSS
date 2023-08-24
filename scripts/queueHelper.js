@@ -44,7 +44,7 @@ function songNameFactory(songList, nameList, artistList, shouldEnableTapInfo) {
   document.getElementById("music-song").firstChild.textContent = nameList[currentSongIndex] + "\n";
   document.getElementById("music-artist").textContent = artistList[currentSongIndex];
 
-  if (shouldEnableTapInfo) {
+  if (shouldEnableTapInfo == 1) {
     musicDiv.addEventListener("click", function () {
       currentAction++;
       if (currentAction == 1) {
