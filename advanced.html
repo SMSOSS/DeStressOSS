@@ -31,14 +31,20 @@
         }
     </style>
 
+    <!-- Inherit cookieMonster -->
+    <script src="scripts/cookieMonster.js"></script>
+
     <title>DeStress - Advanced Features</title>
 </head>
 
 <body>
-    <div id="page-title" style="position: absolute; display: flex; justify-content: center; align-items: center; top: 3vh;">
+    <div id="page-title"
+        style="position: absolute; display: flex; justify-content: center; align-items: center; top: 3vh;">
         <a href="/index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="7.7777777778vw" height="7.7777777778vw" viewBox="0 0 28 28" fill="none">
-                <path d="M17.5 7L10.5 14L17.5 21" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="7.7777777778vw" height="7.7777777778vw" viewBox="0 0 28 28"
+                fill="none">
+                <path d="M17.5 7L10.5 14L17.5 21" stroke="black" stroke-width="1.75" stroke-linecap="round"
+                    stroke-linejoin="round" />
             </svg>
         </a>
         <h2 id="page-title" style="top: -0.4vh; left: 8px;">Advanced</h2>
@@ -54,7 +60,7 @@
             <div id="top-card">
                 <h5 id="card-text">Time per Session</h5>
 
-                <select name="timer" id="timer" onchange="this.form.submit()">
+                <select name="timer" id="timer">
                     <option value="1">1 Minute</option>
                     <option value="5">5 Minutes</option>
                     <option value="10">10 Minutes</option>
@@ -69,20 +75,25 @@
             <div id="mid-card">
                 <h5 id="card-text">Tap for Next/Prev Song Info</h5>
 
-                <select name="enableTapInfo" id="enableTapInfo" onchange="this.form.submit()">
+                <select name="enableTapInfo" id="enableTapInfo">
                     <option value="0">Disabled</option>
                     <option value="1">Enabled</option>
-            </select>
+                </select>
             </div>
         </form>
 
         <form method="post" action="advanced.html">
-            <h5 id="card-text">Swipe Track to Skip</h5>
+            <div id="bottom-card">
+                <h5 id="card-text">Swipe Track to Skip</h5>
 
-            <select name="enableS2C" id="enableS2C" onchange="this.form.submit()">
-                <option value="0">Disabled</option>
-                <option value="1">Enabled</option>
-            </select>
+                <select name="enableS2C" id="enableS2C">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+                </select>
+            </div>
     </div>
     </form>
+
+    <!-- Inherit page-specific js tool -->
+    <script src="scripts/DSLabTool.js"></script>
 </body>
