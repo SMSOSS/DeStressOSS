@@ -56,6 +56,6 @@ if (!getCookie("userEnableS2C")) {
     setCookie("userEnableS2C", 0);
 }
 
-if (getCookie("userEnableS2C")) {
+if (getCookie("userEnableS2C") == 1) {
     startS2C(0);
 }
