@@ -37,6 +37,9 @@ function songNameFactory(songList, nameList, artistList, shouldEnableTapInfo) {
   var currentSongIndex = 0;
   var currentAction = 0;
 
+  audioPlayer.src = songList[currentSongIndex];
+  audioPlayer.play();
+
   // feature: set song name and artist name first
   document.getElementById("music-song").firstChild.textContent = nameList[currentSongIndex] + "\n";
   document.getElementById("music-artist").textContent = artistList[currentSongIndex];
