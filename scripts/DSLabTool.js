@@ -29,10 +29,10 @@ timerSetting.addEventListener("change", function (event) {
 
 tapInfoSetting.addEventListener("change", function (event) {
     var newTapInfoValue = event.target.value;
-    setCookie("userCountdownTime", newTapInfoValue);
+    setCookie("userEnableTapInfo", newTapInfoValue);
 });
 
 S2CSetting.addEventListener("change", function (event) {
     var newS2CValue = event.target.value;
-    setCookie("userCountdownTime", newS2CValue);
+    setCookie("userEnableS2C", newS2CValue);
 });
