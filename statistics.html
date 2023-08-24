@@ -11,6 +11,9 @@
     <!-- Inherit page-specific title-->
     <link rel="stylesheet" type="text/css" href="assets/styles/statistics.css">
 
+    <!-- Inherit cookieMonster -->
+    <script src="scripts/cookieMonster.js"></script>
+
     <title>DeStress - User Statistics</title>
 </head>
 
@@ -45,7 +48,7 @@
             </div>
 
             <h5 id="card-text">Focus Mode</h5>
-            <p id='card-subtext'>-1m</p>
+            <p id='card-subtext' name="focus-time">-1m</p>
         </div>
 
         <!-- Relax Mode -->
@@ -58,7 +61,7 @@
             </div>
 
             <h5 id="card-text">Relax Mode</h5>
-            <p id='card-subtext'>-1m</p>
+            <p id='card-subtext' name="relax-time">-1m</p>
         </div>
 
         <!-- Sleep Mode -->
@@ -71,9 +74,10 @@
             </div>
 
             <h5 id="card-text">Sleep Mode</h5>
-            <p id='card-subtext'>-1m</p>
+            <p id='card-subtext' name="sleep-time">-1m</p>
         </div>
 
     <p id="disclaimer">Statistics for reference use only.</p>
 
+    <script src="scripts/statHelper.js"></script>
 </body>
