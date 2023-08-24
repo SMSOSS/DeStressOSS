@@ -49,7 +49,11 @@ function songNameFactory(songList, nameList, artistList, shouldEnableTapInfo) {
       currentAction++;
       if (currentAction == 1) {
         document.getElementById("music-song").firstChild.textContent = "Next Song\n";
-        document.getElementById("music-artist").textContent = nameList[currentSongIndex + 1] + " by " + artistList[currentSongIndex + 1];
+        if (!nameList[currentSongIndex + 1]){
+          document.getElementById("music-artist").textContent = nameList[0] + " by " + artistList[0];
+        } else {
+          document.getElementById("music-artist").textContent = nameList[currentSongIndex + 1] + " by " + artistList[currentSongIndex + 1];
+        }
       } else if (currentAction == 2 && !(currentSongIndex == 0)) {
         document.getElementById("music-song").firstChild.textContent = "Previous Song\n";
         document.getElementById("music-artist").textContent = nameList[currentSongIndex - 1] + " by " + artistList[currentSongIndex - 1];
