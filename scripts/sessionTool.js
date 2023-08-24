@@ -10,7 +10,7 @@ function shuffleSong() {
 
 // Get/Set default time
 if (!getCookie("userCountdownTime")) {
-    setCookie("userCountdownTime", 5)
+    setCookie("userCountdownTime", 10)
 }
 
 var userCountdownTime = getCookie("userCountdownTime");
