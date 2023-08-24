@@ -12,9 +12,9 @@ function expandCard(name) {
     // feature: redirect user to session page onClick
     if (expandedCard === card && card.classList.contains('expanded')) {
         if (name == "statistics" || name == "advanced") {
-            window.location.href = '/' + name + '.html';
+            window.location.href = '' + name + '.html';
         } else {
-            window.location.href = '/session.html?mode=' + name;
+            window.location.href = 'session.html?mode=' + name;
         }
         return;
     }

@@ -32,7 +32,7 @@ function sessionTimer(userTime, userMode) {
 
         if (currentTime < 0) {
             clearInterval(interval);
-            window.location.href = "/session-end.html?time=" + userTime + "&mode=" + userMode;
+            window.location.href = "session-end.html?time=" + userTime + "&mode=" + userMode;
         }
     }, 1000);
 }
