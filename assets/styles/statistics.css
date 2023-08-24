@@ -1,0 +1,86 @@
+#time-spent-div {
+    position: relative;
+    left: 20vw;
+    top: 16.125vh;
+    width: 60vw;
+    height: 18vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#time-spent-digit {
+    position: relative;
+    color: #1E1E1E;
+    font-family: HarmonyOS Sans;
+    font-size: 26.6666666667vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#time-spent-desc {
+    position: absolute;
+    bottom: -1vh;
+    color: #1E1E1E;
+    font-family: HarmonyOS Sans;
+    font-size: 4.4444444444vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#progress-bar {
+    position: absolute;
+    left: 5vw;
+    top: 37.125vh;
+    display: flex;
+    width: 90vw;
+    height: 5.25vh;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+#progress-color {
+    position: relative;
+    height: 100%;
+}
+
+#card-holder {
+    position: absolute;
+    width: 100%;
+    height: 26.25vh;
+    top: 46.875vh;
+}
+
+#top-card,
+#mid-card,
+#bottom-card {
+    width: 90vw;
+}
+
+#card-subtext {
+    position: absolute;
+    right: 5vw;
+    color: #666;
+    text-align: right;
+    font-family: HarmonyOS Sans;
+    font-size: 4.4444444444vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#disclaimer {
+    position: absolute;
+    left: 30vw;
+    bottom: 4.5vh;
+    color: #606162;
+    font-family: HarmonyOS Sans;
+    font-size: 2.7777777778vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,83 @@
+#info-card,
+#top-card,
+#mid-card,
+#bottom-card {
+    position: relative;
+    width: 95vw;
+    height: 5.25vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: height 0.3s ease;
+}
+
+#info-card {
+    height: 10.5vh;
+    top: 4.5vh; 
+    border-radius: 2.2222222222vw;
+} 
+
+#icon-div {
+    position: absolute;
+    width: 3.125vh;
+    height: 3.125vh;  
+    left: 5%; 
+    top: 1vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    border-radius: 50%;
+} 
+
+#card-text {
+    position: absolute;
+    left: 16.049382716%;
+    top: 1.375vh; 
+    line-height: 1.25;
+    color: #1E1E1E;
+    font-size: 4.4444444444vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+}
+
+#info-subtext {    
+    color: #666;
+    font-size: 3.3333333333vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 400;
+    visibility: hidden;
+}
+
+#top-card {
+    border-radius: 2.2222222222vw 2.2222222222vw 0 0;
+    border-bottom: 0.2777777778vw solid #F2F2F2;
+}
+
+#mid-card {
+    border-bottom: 0.2777777778vw solid #F2F2F2;
+}
+
+#bottom-card {
+    border-radius: 0 0 2.2222222222vw 2.2222222222vw;
+}
+
+#tap-inst {
+    position: absolute;
+    width: 105%;
+    bottom: 4.5vh;
+
+    color: #606162;
+    font-size: 2.7777777778vw;
+    font-family: HarmonyOS Sans;
+    text-align: center;
+}

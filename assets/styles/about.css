@@ -1,0 +1,71 @@
+#logo-div {
+    position: relative;
+    left: 5vw;
+    top: 12.5vh;
+    width: 90vw;
+    height: 21vh;
+    border-radius: 1vh;
+    border-bottom: 1px solid #F2F2F2;
+    background: #FFF;
+    flex-shrink: 0;
+}
+
+#ds-logo {
+    height: 100%;
+    width: 100%;
+}
+
+#card-container {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 36.125vh;
+}
+#top-card,
+#mid-card,
+#bottom-card {
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    height: 5.25vh;
+    border-bottom: 0.125vh solid #F2F2F2;
+    background: #FFF;
+    flex-shrink: 0;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-card {
+    border-radius: 1vh 1vh 0px 0px;
+}
+
+#bottom-card {
+    border-radius: 0 0 1vh 1vh;
+    border-bottom: 0;
+}
+
+#card-text {
+    position: absolute;
+    left: 5vw;
+    color: #1E1E1E;
+    font-family: HarmonyOS Sans;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#card-subtext {
+    position: absolute;
+    right: 5vw;
+    color: #666;
+    font-family: HarmonyOS Sans;
+    font-size: 1.75vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+}

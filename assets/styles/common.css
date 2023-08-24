@@ -1,0 +1,37 @@
+body {
+    background: #F1F3F5;
+    margin: 0;
+
+    touch-action: manipulation;
+    zoom: 1;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#l1-button {
+    position: relative;
+    width: 38.8888888889vw;
+    height: 4.75vh;
+    border-radius: 5.5555555556vw;
+    background: #C3D4F5;
+    color: #0A59F7;
+    font-size: 4.4444444444vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 500;
+    bottom: 7.25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0;
+}
+
+#page-title {
+    position: relative;
+    left: 5vw;
+    top: 1vh;
+    color: #000;
+    font-size: 6.6666666667vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 500;
+}

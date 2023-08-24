@@ -1,0 +1,75 @@
+body {
+    background: #000
+}
+
+#music-div {
+    position: relative;
+    left: 5vw;
+    top: 4.5vh;
+    height: 4.125vh;
+    width: 95%;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    margin: 0;
+}
+
+#music-song {
+    position: relative;
+    left: 1.1111111111vw;
+    color: #999;
+    font-size: 4.4444444444vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 400;
+}
+
+#music-artist {
+    position: relative;
+    color: #999;
+    font-size: 3.3333333333vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 400;
+}
+
+#time-div {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+#time-digit {
+    position: relative;
+    color: #DBDBDB;
+    font-size: 26.6666666667vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 300;
+}
+
+#time-togo {
+    position: relative;
+    left: 1.1111111111vw;
+    color: #DBDBDB;
+    font-size: 8.3333333333vw;
+    font-family: HarmonyOS Sans;
+    font-weight: 500;
+}
+
+#mode {
+    position: absolute;
+    left: 32.2222222222vw;
+    bottom: 1.75vh;
+
+    color: #999;
+    font-size: 3.3333333333vw;
+    font-family: HarmonyOS Sans;
+}

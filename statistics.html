@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Always inherit font and common styles-->
+    <link rel="stylesheet" type="text/css" href="assets/styles/font.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/common.css">
+
+    <!-- Inherit Card Styles from home styles -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/home.css">
+
+    <!-- Inherit page-specific title-->
+    <link rel="stylesheet" type="text/css" href="assets/styles/statistics.css">
+
+    <title>DeStress - User Statistics</title>
+</head>
+
+<body>
+    <div id="page-title" style="position: absolute; display: flex; justify-content: center; align-items: center; top: 3vh;">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7.7777777778vw" height="7.7777777778vw" viewBox="0 0 28 28" fill="none">
+                <path d="M17.5 7L10.5 14L17.5 21" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <h2 id="page-title" style="top: -0.4vh; left: 8px;">Statistics</h2>
+    </div>
+
+    <div id="time-spent-div">
+        <h5 id='time-spent-digit'>-1<br></h5>
+        <p id="time-spent-desc">Minutes spent using DeStress</p>
+    </div>
+
+    <div id="progress-bar">
+        <div id="progress-color" name="focus-progress" style="border-radius: 1vh 0 0 1vh; background-color: #46B1E3; width: 35%"></div>
+        <div id="progress-color" name="relax-progress" style="background-color: #61CFBE; width: 30%"></div>
+        <div id="progress-color" name="sleep-progress" style="border-radius: 0 1vh 1vh 0 ; background-color: #64BB4C ; width: 35%"></div>    
+    </div>
+
+    <div id="card-holder">
+        <!-- Focus Mode -->
+        <div id="top-card">
+            <div id="icon-div" style="background: #46B1E3;">
+                <svg width="5.2777777778vw" height="5.2777777778vw" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#E7E6FE">
+                    <path d="M8 12h9m-9 0l-2-2H2l2 2-2 2h4l2-2zm9 0l-2-2m2 2l-2 2M16 22.5c2.761 0 5-4.701 5-10.5S18.761 1.5 16 1.5 11 6.201 11 12s2.239 10.5 5 10.5z" stroke="#E7E6FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+
+            <h5 id="card-text">Focus Mode</h5>
+            <p id='card-subtext'>-1m</p>
+        </div>
+
+        <!-- Relax Mode -->
+        <div id="mid-card">
+            <div id="icon-div" style="background: #61CFBE;">
+                <svg width="5.2777777778vw" height="5.2777777778vw" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.5 7.125C9.5 6.33333 10.0652 5.54167 11.1965 5.54167C11.7964 5.54167 12.3717 5.30337 12.7959 4.8792C13.22 4.45504 13.4583 3.87974 13.4583 3.27988V2.77083M6.33333 7.125V6.72917C6.33333 6.09928 6.58356 5.49519 7.02895 5.04979C7.47435 4.60439 8.07844 4.35417 8.70833 4.35417C9.12826 4.35417 9.53099 4.18735 9.82792 3.89042C10.1249 3.59349 10.2917 3.19076 10.2917 2.77083V2.375M13.4583 9.18333V11.875C13.4583 13.1348 12.9579 14.343 12.0671 15.2338C11.1763 16.1246 9.96811 16.625 8.70833 16.625H7.125C5.86522 16.625 4.65704 16.1246 3.76624 15.2338C2.87545 14.343 2.375 13.1348 2.375 11.875V9.18333C2.375 9.05736 2.42504 8.93654 2.51412 8.84746C2.6032 8.75838 2.72402 8.70833 2.85 8.70833H12.9833C13.1093 8.70833 13.2301 8.75838 13.3192 8.84746C13.4083 8.93654 13.4583 9.05736 13.4583 9.18333Z" stroke="#E7E6FE" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.6667 8.70833H14.6459C15.1708 8.70833 15.6742 8.91685 16.0453 9.28801C16.4165 9.65918 16.625 10.1626 16.625 10.6875C16.625 11.2124 16.4165 11.7158 16.0453 12.087C15.6742 12.4581 15.1708 12.6667 14.6459 12.6667H13.4584" stroke="#E7E6FE" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <h5 id="card-text">Relax Mode</h5>
+            <p id='card-subtext'>-1m</p>
+        </div>
+
+        <!-- Sleep Mode -->
+        <div id="mid-card">
+            <div id="icon-div" style="background: #64BB5C;">
+                <svg width="5.2777777778vw" height="5.2777777778vw" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.625 12.6667V3.16667C16.625 2.74674 16.4582 2.34402 16.1613 2.04708C15.8643 1.75015 15.4616 1.58334 15.0417 1.58334H3.95833C3.53841 1.58334 3.13568 1.75015 2.83875 2.04708C2.54181 2.34402 2.375 2.74674 2.375 3.16667V15.8333C2.375 16.2533 2.54181 16.656 2.83875 16.9529C3.13568 17.2499 3.53841 17.4167 3.95833 17.4167H11.0833" stroke="#E7E6FE" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2.375 6.33333H8.70833V4.75M16.625 6.33333H10.2917V4.75M12.6667 15.8333L14.25 17.4167L17.4167 14.25" stroke="#E7E6FE" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <h5 id="card-text">Sleep Mode</h5>
+            <p id='card-subtext'>-1m</p>
+        </div>
+
+    <p id="disclaimer">Statistics for reference use only.</p>
+
+</body>

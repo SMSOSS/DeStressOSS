@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Always inherit font and common styles-->
+    <link rel="stylesheet" type="text/css" href="/assets/styles/font.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/common.css">
+
+    <!-- Inherit page-specific style-->
+    <link rel="stylesheet" type="text/css" href="/assets/styles/about.css">
+
+    <style>
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: inherit;
+            font-family: inherit;
+            color: inherit;
+            position: absolute;
+            right: 5vw;
+            color: #666;
+            font-family: HarmonyOS Sans;
+            font-size: 1.75vh;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: right;
+        }
+    </style>
+
+    <title>DeStress - Advanced Features</title>
+</head>
+
+<body>
+    <div id="page-title" style="position: absolute; display: flex; justify-content: center; align-items: center; top: 3vh;">
+        <a href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7.7777777778vw" height="7.7777777778vw" viewBox="0 0 28 28" fill="none">
+                <path d="M17.5 7L10.5 14L17.5 21" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <h2 id="page-title" style="top: -0.4vh; left: 8px;">Advanced</h2>
+    </div>
+
+    <div id="logo-div">
+        <img src="/assets/labs-logo.png" style="width: 100%; height: 100%">
+    </div>
+
+    <div id="card-container">
+
+        <form method="post" action="advanced.html">
+            <div id="top-card">
+                <h5 id="card-text">Time per Session</h5>
+
+                <select name="timer" id="timer" onchange="this.form.submit()">
+                    <option value="1">1 Minute</option>
+                    <option value="5">5 Minutes</option>
+                    <option value="10">10 Minutes</option>
+                    <option value="15">15 Minutes</option>
+                    <option value="20">20 Minutes</option>
+                    <option value="25">25 Minutes</option>
+                </select>
+            </div>
+        </form>
+
+        <form method="post" action="advanced.html">
+            <div id="mid-card">
+                <h5 id="card-text">Tap for Next/Prev Song Info</h5>
+
+                <select name="enableTapInfo" id="enableTapInfo" onchange="this.form.submit()">
+                    <option value="0">Disabled</option>
+                    <option value="1">Enabled</option>
+            </select>
+            </div>
+        </form>
+
+        <form method="post" action="advanced.html">
+            <h5 id="card-text">Swipe Track to Skip</h5>
+
+            <select name="enableS2C" id="enableS2C" onchange="this.form.submit()">
+                <option value="0">Disabled</option>
+                <option value="1">Enabled</option>
+            </select>
+    </div>
+    </form>
+</body>
