@@ -42,10 +42,12 @@ if (userSleepTime == 0) {
 }
 
 if (userFocusTime == 0) {
-    if (!(userSleepTime == 0)) {
-        userSleepBar.style.borderRadius = "0 1vh 1vh 0";
-    } else {
+    if (userRelaxTime == 0) {
+        userSleepBar.style.borderRadius = "1vh";
+    } else if (userSleepTime == 0){
         userRelaxBar.style.borderRadius = "1vh";
+    } else {
+        userRelaxBar.style.borderRadius = "1vh 0 0 1vh";
     }
 }
 
