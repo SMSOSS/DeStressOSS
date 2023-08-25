@@ -16,6 +16,7 @@ if (!getCookie("userCountdownTime")) {
 var userCountdownTime = getCookie("userCountdownTime");
 var currentMode = new URLSearchParams(window.location.search).get("mode");
 
+document.title = "DeStress • " + currentMode.charAt(0).toUpperCase() + currentMode.slice(1) + " Mode";
 document.getElementById("mode").textContent = "DeStress•" + currentMode.charAt(0).toUpperCase() + currentMode.slice(1) + " Mode";
 sessionTimer(userCountdownTime, currentMode)
 
