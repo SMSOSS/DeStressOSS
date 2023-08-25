@@ -7,7 +7,7 @@ function hideElements() {
 
 function resetTimeout() {
     clearTimeout(timeoutId);
-    timeoutId = setTimeout(hideElements, 10000);
+    timeoutId = setTimeout(hideElements, 1000000);
     document.getElementById("music-div").style.visibility = "visible";
     document.getElementById("mode").style.visibility = "visible";
 }

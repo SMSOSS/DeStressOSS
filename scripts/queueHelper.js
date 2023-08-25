@@ -66,10 +66,27 @@ function songNameFactory(songList, nameList, artistList, shouldEnableTapInfo) {
   }
 
   audioPlayer.addEventListener("ended", function () {
+    console.log("next");
+    var element = document.getElementById("music-song");
+    var clonedElement = element.cloneNode(true);
+    document.body.appendChild(clonedElement);
+    element.classList.add("slideLeft");
+    clonedElement.classList.add("slideLeft2");
+    clonedElement.style.top = "0.5vh";
+  
+    element.addEventListener("animationend", function() {
+      element.classList.remove("slideLeft");
+    });
+    clonedElement.addEventListener("animationend", function() {
+      clonedElement.remove();
+    });
+
     currentSongIndex = (currentSongIndex + 1) % songList.length;
     audioPlayer.src = songList[currentSongIndex];
     audioPlayer.play();
+
     document.getElementById("music-song").firstChild.textContent = nameList[currentSongIndex];
-    document.getElementById("music-artist").textContent = artistList[currentSongIndex];
+      document.getElementById("music-artist").textContent = artistList[currentSongIndex];
+   
   });
 }

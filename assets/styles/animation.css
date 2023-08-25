@@ -1,0 +1,43 @@
+@keyframes slideLeft {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(0vw);
+    }
+}
+
+@keyframes slideLeft2 {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-100vw);
+    }
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#block {
+    position: absolute;
+    top: 4.5vh;
+    height: 6vh;
+    width: 15vw;
+
+    z-index: 2;
+    background-color: #000;
+    margin: 0;
+}
+
+
+.slideLeft{
+    animation: slideLeft 0.5s ease-in-out 1;
+}
+
+.slideLeft2{
+    animation: slideLeft2 0.5s ease-in-out 1;
+}

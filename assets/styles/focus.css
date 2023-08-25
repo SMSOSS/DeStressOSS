@@ -3,26 +3,28 @@ body {
 }
 
 #music-div {
-    position: relative;
+    position: absolute;
     left: 5vw;
     top: 4.5vh;
-    height: 4.125vh;
+    height: 5vh;
     width: 95%;
 
     display: flex;
     align-items: center;
     justify-content: left;
 
+    overflow: hidden;
     margin: 0;
 }
 
 #music-song {
-    position: relative;
-    left: 1.1111111111vw;
+    position: absolute;
+    left: 10.1111111111vw;
     color: #999;
     font-size: 4.4444444444vw;
     font-family: HarmonyOS Sans;
     font-weight: 400;
+    z-index: 1;
 }
 
 #music-artist {

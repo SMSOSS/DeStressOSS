@@ -3,7 +3,7 @@
     <!-- Always inherit font and common styles-->
     <link rel="stylesheet" type="text/css" href="assets/styles/font.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/common.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/styles/animation.css">
     <!-- Inherit page-specific title-->
     <link rel="stylesheet" type="text/css" href="assets/styles/focus.css">
 
@@ -13,11 +13,10 @@
 
 <body>
     <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-
-    
+    <div id="block"></div>
     <div id="music-div">
         <!-- Song Drawable -->
-        <svg width="4.125vh" height="4.125vh" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block;">
+        <svg width="4.125vh" height="4.125vh" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block;z-index: 3">
             <path d="M2.75 15.125H22M2.75 23.375H17.875M2.75 6.875H27.5" stroke="#999999" stroke-width="2.0625" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M27.5 25.4375C27.5 25.9845 27.2827 26.5091 26.8959 26.8959C26.5091 27.2827 25.9845 27.5 25.4375 27.5C24.8905 27.5 24.3659 27.2827 23.9791 26.8959C23.5923 26.5091 23.375 25.9845 23.375 25.4375C23.375 24.8905 23.5923 24.3659 23.9791 23.9791C24.3659 23.5923 24.8905 23.375 25.4375 23.375C25.9845 23.375 26.5091 23.5923 26.8959 23.9791C27.2827 24.3659 27.5 24.8905 27.5 25.4375ZM27.5 25.4375V14.575C27.5 14.3562 27.5869 14.1464 27.7416 13.9916C27.8964 13.8369 28.1062 13.75 28.325 13.75H30.25" stroke="#999999" stroke-width="2.0625" stroke-linecap="round"/>
         </svg>
