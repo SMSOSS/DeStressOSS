@@ -24,8 +24,8 @@ body{
 
 #block {
     position: absolute;
-    top: 4.5vh;
-    height: 6vh;
+    top: 4vh;
+    height: 8vh;
     width: 15vw;
 
     z-index: 2;
