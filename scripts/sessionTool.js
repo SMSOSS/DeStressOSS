@@ -17,7 +17,6 @@ var userCountdownTime = getCookie("userCountdownTime");
 var currentMode = new URLSearchParams(window.location.search).get("mode");
 
 document.getElementById("mode").textContent = "DeStress•" + currentMode.charAt(0).toUpperCase() + currentMode.slice(1) + " Mode";
-sessionTimer(userCountdownTime, currentMode)
 
 var modeSongList = [];
 var modeNameList = [];
@@ -80,6 +79,8 @@ if (isIOS) {
     }, 500);
   });
 }
+
+sessionTimer(userCountdownTime, currentMode)
 
 if (!getCookie("userEnableS2C")) {
     setCookie("userEnableS2C", 0);
