@@ -38,6 +38,18 @@
 </head>
 
 <body>
+    <div id="rotate-block">
+        <svg id="rotate-icon" xmlns="http://www.w3.org/2000/svg" width="6vw" height="6vw" viewBox="0 0 48 48"
+            fill="none">
+            <path
+                d="M44.006 6V14.994C44.006 15.2608 43.9 15.5167 43.7113 15.7053C43.5226 15.894 43.2668 16 43 16C42.6 16 42.24 15.762 42.068 15.4C40.4422 11.9872 37.8827 9.10498 34.686 7.08733C31.4892 5.06968 27.7862 3.99921 24.006 4C13.634 4 5.10596 11.894 4.10596 22"
+                stroke="#0A59F7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M4.1001 42V33.006C4.1001 32.45 4.5521 32 5.1081 32C5.5081 32 5.8681 32.238 6.0401 32.6C7.66566 36.0125 10.2249 38.8945 13.4212 40.9121C16.6176 42.9298 20.3202 44.0004 24.1001 44C34.4721 44 43.0001 36.106 44.0021 26M24.0001 28C25.061 28 26.0784 27.5786 26.8285 26.8284C27.5787 26.0783 28.0001 25.0609 28.0001 24C28.0001 22.9391 27.5787 21.9217 26.8285 21.1716C26.0784 20.4214 25.061 20 24.0001 20C22.9392 20 21.9218 20.4214 21.1717 21.1716C20.4215 21.9217 20.0001 22.9391 20.0001 24C20.0001 25.0609 20.4215 26.0783 21.1717 26.8284C21.9218 27.5786 22.9392 28 24.0001 28Z"
+                stroke="#0A59F7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <h5 id="rotate-text">Please <span style="color:#0A59F7;">rotate</span> your phone to continue.</h5>
+    </div>
     <div id="page-title"
         style="position: absolute; display: flex; justify-content: center; align-items: center; top: 3vh;">
         <a href="index.html">
@@ -96,3 +108,6 @@
     <!-- Inherit page-specific js tool -->
     <script src="scripts/DSLabTool.js"></script>
 </body>
+
+<!-- Lock Orientation -->
+<script src="scripts/oriHelper.js"></script>

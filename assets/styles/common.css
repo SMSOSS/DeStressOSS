@@ -39,3 +39,35 @@ body {
 :focus {
     outline: none;
 }
+
+#rotate-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    z-index: 9999;
+}
+
+#rotate-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 38vh;
+}
+
+#rotate-text {
+    position: absolute;
+    top: 48.2222222222vh;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    color: #000;
+    font-family: HarmonyOS Sans;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
