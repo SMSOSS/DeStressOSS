@@ -1,5 +1,5 @@
 function isPortrait() {
-    if (window.orientation == 0 || window.orientation == 180) {
+    if (screen.orientation.type.includes("portrait")) {
         return true;
     }
 }
