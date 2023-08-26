@@ -53,7 +53,11 @@ songNameFactory(modeSongList, modeNameList, modeArtistList, userEnableTapInfo);
 
 var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-if (isIOS) {
+if (!getCookie("userEnableTapStart")) {
+  setCookie("userEnableTapStart", 0);
+}
+
+if (isIOS || getCookie("userEnableTapStart") == 1) {
   var tapDiv = document.getElementById("tap-div");
   var elements = document.body.getElementsByClassName("*");
 
