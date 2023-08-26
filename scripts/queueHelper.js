@@ -38,7 +38,10 @@ function songNameFactory(songList, nameList, artistList, shouldEnableTapInfo) {
   var currentAction = 0;
 
   audioPlayer.src = songList[currentSongIndex];
-  audioPlayer.play();
+
+  document.body.addEventListener('click', function () {
+    audioPlayer.play();
+  });
 
   // feature: set song name and artist name first
   document.getElementById("music-song").firstChild.textContent = nameList[currentSongIndex] + "\n";
@@ -66,7 +69,6 @@ function songNameFactory(songList, nameList, artistList, shouldEnableTapInfo) {
   }
 
   audioPlayer.addEventListener("ended", function () {
-    console.log("next");
     var element = document.getElementById("music-song");
     var clonedElement = element.cloneNode(true);
     document.body.appendChild(clonedElement);

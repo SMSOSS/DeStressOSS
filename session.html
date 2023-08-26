@@ -13,6 +13,16 @@
 
 <body>
     <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    
+    <!-- iOS: tap to start div -->
+    <div id="tap-div">
+        <svg id="tap-icon" xmlns="http://www.w3.org/2000/svg" width="6vh" height="6vh" viewBox="0 0 48 48" fill="none">
+            <path d="M15.0001 24L10.9921 29.344C10.4321 30.0905 10.1507 31.0094 10.1968 31.9415C10.2428 32.8736 10.6133 33.7603 11.2441 34.448L18.8121 42.704C19.5681 43.53 20.6361 44 21.7581 44H31.0001C35.8001 44 39.0001 40 39.0001 36V18.858C39.0001 14.286 33.0001 14.286 33.0001 18.858V20" stroke="#0A59F7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M33 20V16.572C33 12 27 12 27 16.572V20V15C27 10.428 21 10.428 21 15M21 20V15M21 15V6.998C20.9995 6.2027 20.6832 5.44015 20.1206 4.87797C19.5581 4.3158 18.7953 4 18 4C17.2044 4 16.4413 4.31607 15.8787 4.87868C15.3161 5.44129 15 6.20435 15 7V30" stroke="#0A59F7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h5 id="tap-text">Please <span style="color:#0A59F7;">tap</span> to continue.</h5>
+    </div>
+
     <div id="block"></div>
     <div id="music-div">
         <!-- Song Drawable -->

@@ -52,6 +52,30 @@ switch (currentMode) {
 shuffleSong();
 songNameFactory(modeSongList, modeNameList, modeArtistList, userEnableTapInfo);
 
+var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+if (isIOS) {
+  var tapDiv = document.getElementById("tap-div");
+  var elements = document.body.getElementsByClassName("*");
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (element !== tapDiv) {
+      element.style.display = "none";
+    }
+  }
+  tapDiv.style.display = "block";
+
+  tapDiv.addEventListener("click", function() {
+    tapDiv.style.display = "none";
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      if (element !== tapDiv) {
+        element.style.display = "";
+      }
+    }
+  });
+}
+
 if (!getCookie("userEnableS2C")) {
     setCookie("userEnableS2C", 0);
 }

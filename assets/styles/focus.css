@@ -75,3 +75,36 @@ body {
     font-size: 3.3333333333vw;
     font-family: HarmonyOS Sans;
 }
+
+#tap-div {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    z-index: 9999;
+}
+
+#tap-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 39.25vh;
+}
+
+#tap-text {
+    position: absolute;
+    top: 43vh;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    color: #000;
+    font-family: HarmonyOS Sans;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
