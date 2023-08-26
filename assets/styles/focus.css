@@ -108,3 +108,13 @@ body {
     line-height: normal;
     text-align: center;
 }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
