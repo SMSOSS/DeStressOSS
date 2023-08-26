@@ -52,7 +52,6 @@ if (userFocusTime == 0) {
 }
 
 if (userTotalTime == 0) {
-    console.log("hello is me");
     userRelaxBar.style.display = "none";
     userSleepBar.style.display = "none";
     userFocusBar.style.borderRadius = "1vh";
